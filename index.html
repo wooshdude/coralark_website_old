@@ -1,45 +1,90 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-        <title> yourmom online </title>
-        <style>
-            .imageDiv {
-                width:auto;
-                text-align:center;
-                padding:20px;
-            }
-            img {
-                max-width:100%;
-                        height:auto;
-            } 
-            body {background-color: #222;}
+<style>
+    .content {
+        margin: 0 auto;
+        margin-bottom: auto;
+        position:absolute;
+        left:0;
+        right:0;
+        padding-bottom: 50%;
+    }
 
-        </style>
+    .innerContent {
+        margin-left: 25%;
+        margin-right: 25%;
+        padding-top: 5%;
+        text-align: center;
+        display: flex;
+        font-size: 25px;
+        font-family: monospace;
+    }
+
+    .innerContent::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    body{
+        background-color: #333;
+        color: azure;
+    }
+
+    .header {
+        font-family:monospace;
+        position: fixed;
+        background-color: #333;
+        width: 100%;
+        height: auto;
+        top: 0;
+        padding-left: 2%;
+    }
+
+    .parallax {
+        /* The image used */
+        background-image: url("jordan.png");
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        width: 100%;
+        height: 0;
+        padding-top: 40%;
+    }
+
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+        flex: 33.33%;
+    }
+</style>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>patch-notes</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
     </head>
     <body>
-        <body onload="myImages()">
-        <div class="imageDiv" role="button" onclick="myImages()"> 
-            <img src="images/1.jpg" id="images" width="500" height="500">
+        <div class="header">
+            <div><h2>yourmom.online</h2></div>
         </div>
-    <script>
-        var images = ["images/1.jpg", "images/2.jpg", "images/3.jpg", "images/4.jpg", "images/5.jpg",
-        "images/6.jpg", "images/7.jpg", "images/8.jpg", "images/9.jpg", "images/10.jpg",
-        "images/11.jpg", "images/12.jpg", "images/13.jpg", "images/14.jpg", "images/15.jpg",
-        "images/16.jpg", "images/17.jpg", "images/18.jpg", "images/19.jpg", "images/20.jpg",
-        "images/21.jpg", "images/22.jpg", "images/23.jpg", "images/24.jpg", "images/25.jpg",
-        "images/26.jpg", "images/27.jpg", "images/28.jpg", "images/29.jpg", "images/30.jpg",
-        "images/31.jpg", "images/32.jpg", "images/33.jpg", "images/34.jpg", "images/35.jpg",
-        "images/36.jpg", "images/37.jpg", "images/38.jpg"]
-        var i = 0
-
-        function getRandomInt(max) {
-            return Math.floor(Math.random() * max);
-        }       
-
-        function myImages(){
-            document.getElementById("images").src = images[getRandomInt(37)];
-        }
-    </script>
-
+        <div class="parallax"></div>
+        
+        <!--div class="spacer"></div-->
+        <div class="content">
+            <div class='innerContent'>
+                <div class="column"><a href="map.html"><img src="map map.png" alt="" href style="width: 100%;"></a>Live Map</div>
+                <div class="column"><a href="patch-notes.html"><img src="drew map.png" alt="" style="width: 100%;"></a>News</div>
+            </div>
+        </div>
+        <script>
+        </script>
     </body>
 </html>
