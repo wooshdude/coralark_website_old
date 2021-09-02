@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <style>
+    .banner{
+        display: none;
+    }
+
+
     .content {
         margin: 0 auto;
         margin-bottom: auto;
@@ -13,6 +18,7 @@
         margin-left: 15%;
         margin-right: 15%;
         padding-top: 10px;
+        font-size: medium;
     }
 
     body{
@@ -21,6 +27,14 @@
         color: azure;
         font-size: 20px;
         font-family: monospace;
+    }
+
+    .blocks{
+        padding-top: 50px;
+    }
+
+    .names{
+        padding-top: 0px;
     }
 
     .header {
@@ -73,8 +87,8 @@
     }
 
     .photo{
-        width: 30%;
-        min-width: 300px;
+        width: 100%;
+        float: none;
     }
     
     /* Track */
@@ -90,6 +104,58 @@
     /* Handle on hover */
     ::-webkit-scrollbar-thumb:hover {
       background: #555;
+    }
+
+    @media only screen and (min-width: 800px) {
+        .banner{
+            display: block;
+        }   
+
+        .blocks{
+            padding-bottom: 25%;
+        }
+
+        .photo{
+            width: 40%;
+            float: left;
+        }
+
+        .names{
+            float: left;
+        }
+
+        .innerContent{
+            font-size: small;
+        }
+    }
+
+    @media only screen and (min-width: 1000px) {
+        .banner{
+            display: block;
+        }   
+
+        .blocks{
+            padding-bottom: 25%;
+        }
+
+        .photo{
+            width: 40%;
+            float: left;
+        }
+
+        .names{
+            float: left;
+        }
+
+        .innerContent{
+            font-size: large;
+        }
+    }
+
+    @media only screen and (min-width: 1500px){
+        .innerContent{
+            font-size: x-large;
+        }
     }
     
 </style>
@@ -107,7 +173,7 @@
             <div><a href="index.html"><img src="backArrow.png" style="width: 35px;"></a></div>
         </div>
         <div class="spacer" style="margin-bottom: 80px;"></div>
-        <center><img src='mall.png' style="width: 70%;"></center>
+        <center><img class='banner' src='mall.png' style="width: 70%;"></center>
         <div class="content">
             <br>
             <br>
@@ -115,50 +181,50 @@
             <div class='innerContent'>
                 <hr>
 
-                <div style="padding-top: 120px;">
-                    <a href="8-26-21.html"><img class='photo' src="onlinemap.PNG" style="float: left; padding-right: 25px;"></a>
-                    <div style="padding-top: 5px; text-align: left;">
+                <div class='blocks'>
+                    <a href="8-26-21.html"><img class='photo' src="onlinemap.PNG" style="padding-right: 25px;"></a>
+                    <div class='names' style="text-align: left;">
                         <h6>THIS WEEK AT YOUR MOM - 8/26/21</h6>
                         <h2 style="font-family: Arial, Helvetica, sans-serif;">A BRIEF HIATUS</h2>
                     </div>
                 </div>
 
 
-                <div style="padding-top: 120px;">
-                    <a href="hotfix-1.0.2.html"><img class='photo' src="yourmom hotfix.png" style="float: left; padding-right: 25px;"></a>
-                    <div style="padding-top: 5px; text-align: left;">
+                <div class='blocks'>
+                    <a href="hotfix-1.0.2.html"><img class='photo' src="yourmom hotfix.png" style="padding-right: 25px;"></a>
+                    <div class='names' style="text-align: left;">
                         <h6>HOTFIX - 1.0.2</h6>
                         <h2 style="font-family: Arial, Helvetica, sans-serif;">THE ONE ABOUT ENTITIES</h2>
                     </div>
                 </div>
 
-                <div style="padding-top: 120px;">
-                    <a href="8-19-21.html"><img class='photo' src="pathway.png" style="float: left; padding-right: 25px;"></a>
-                    <div style="padding-top: 5px; text-align: left;">
+                <div class='blocks'>
+                    <a href="8-19-21.html"><img class='photo' src="pathway.png" style="padding-right: 25px;"></a>
+                    <div class='names' style="text-align: left;">
                         <h6>THIS WEEK AT YOUR MOM - 8/12/21</h6>
                         <h2 style="font-family: Arial, Helvetica, sans-serif;">A WORK IN PROGRESS</h2>
                     </div>
                 </div>
 
-                <div style="padding-top: 120px;">
-                    <a href="8-12-21.html"><img class='photo' src="beetel.png" style="float: left; padding-right: 25px;"></a>
-                    <div style="padding-top: 5px; text-align: left;">
+                <div class='blocks'>
+                    <a href="8-12-21.html"><img class='photo' src="beetel.png" style="padding-right: 25px;"></a>
+                    <div class='names' style="text-align: left;">
                         <h6>THIS WEEK AT YOUR MOM - 8/12/21</h6>
                         <h2 style="font-family: Arial, Helvetica, sans-serif;">BUSY AS BEES</h2>
                     </div>
                 </div>
 
-                <div style="padding-top: 120px;">
-                    <a href="8-5-21.html"><img class='photo' src="computer.png" style="float: left; padding-right: 25px;"></a>
-                    <div style="padding-top: 5px; text-align: left;">
+                <div class='blocks'>
+                    <a href="8-5-21.html"><img class='photo' src="computer.png" style="padding-right: 25px;"></a>
+                    <div class='names' style="text-align: left;">
                         <h6>THIS WEEK AT YOUR MOM - 8/5/21</h6>
                         <h2 style="font-family: Arial, Helvetica, sans-serif;">BINARY RENOVATIONS</h2>
                     </div>
                 </div>
 
-                <div style="padding-top: 120px;">
-                    <a href="hotfix 1.0.2.html"><img class='photo' src="yourmom hotfix.png" style="float: left; padding-right: 25px;"></a>
-                    <div style="padding-top: 5px; text-align: left;">
+                <div class='blocks'>
+                    <a href="hotfix 1.0.2.html"><img class='photo' src="yourmom hotfix.png" style="padding-right: 25px;"></a>
+                    <div class='names' style="text-align: left;">
                         <h6>HOTFIX - 1.0.1</h6>
                         <h2 style="font-family: Arial, Helvetica, sans-serif;">THE ONE ABOUT PAPERMC</h2>
                     </div>

@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <style>
+    .banner{
+        display: none;
+    }
+
     .content {
         margin: 0 auto;
         margin-bottom: auto;
@@ -33,6 +37,28 @@
     body{
         background-color: #333;
         color: azure;
+    }
+
+    .breakpoint{
+        padding-top: 50%;
+    }
+
+    .button{
+        text-align: center;
+        width: 100%;
+    }
+
+    .donateButton{
+        width: 100px;
+        float: left;
+    }
+
+    .donateText{
+        float: left; 
+        text-align: left; 
+        padding-top: 1%; 
+        padding-left: 10px;
+        font-size: large;
     }
 
     .extras{
@@ -78,6 +104,147 @@
         width: 33.33%;
         padding: 5px;
         flex: 33.33%;
+        font-size: large;
+    }
+
+        /* width */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: #333;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #888;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+
+    hr.one {
+        border: 3px solid rgb(204, 78, 78);
+    }
+
+    hr.two {
+        border: 3px solid rgb(78, 154, 204);
+    }
+
+    hr.three {
+        border: 3px solid rgb(204, 196, 78);
+    }
+
+
+    @media only screen and (min-width: 800px) {
+        .breakpoint{
+            padding-top: 30%;
+        }
+    }
+
+    @media only screen and (min-width: 1000px) {
+    .banner{
+        display: block;
+    }
+    .content {
+        margin: 0 auto;
+        margin-bottom: auto;
+        position:absolute;
+        left:0;
+        right:0;
+        padding-bottom: 50%;
+    }
+
+    .innerContent {
+        text-align: center;
+        display: flex;
+        font-size: 25px;
+        font-family: monospace;
+
+        left: 50%;
+        transform: translate(-50%);
+        position: absolute;
+        padding-top: 10px;
+        max-width: 50%;
+        min-width: 300px;
+        padding-bottom: 25%;
+    }
+
+    .innerContent::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    body{
+        background-color: #333;
+        color: azure;
+    }
+
+    .breakpoint{
+        padding-top: 30%;
+    }
+
+    .extras{
+        font-size: 25px;
+        font-family: monospace;
+
+        left: 50%;
+        transform: translate(-50%);
+        position: absolute;
+        padding-top: 10px;
+        max-width: 50%;
+        min-width: 300px;
+        padding-bottom: 25%;
+    }
+
+    .donateButton{
+        width: 200px;
+        float: left;
+    }   
+    .donateText{
+        float: left; 
+        text-align: left; 
+        padding-top: 1%; 
+        padding-left: 10px;
+        font-size: 30px;
+    }
+
+    .header {
+        font-family:monospace;
+        position: fixed;
+        background-color: #333;
+        width: 100%;
+        height: auto;
+        top: 0;
+        padding-left: 2%;
+    }
+
+    .parallax {
+        /* The image used */
+        background-image: url("jordan.png");
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        width: 100%;
+        min-height: 100px;
+        padding-top: 35%;
+    }
+
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+        flex: 33.33%;
+        font-size: 30px;
     }
 
 
@@ -112,6 +279,7 @@
     hr.three {
         border: 3px solid rgb(204, 196, 78);
     }
+    }
 
 </style>
 <html>
@@ -129,30 +297,34 @@
             <div><h2>yourmom.online</h2></div>
         </div>
         <div class="spacer" style="margin-bottom: 80px;"></div>
-        <center><img src='jordan.png' style="width: 70%;"></center>
+        <center><img class='banner' src='jordan.png' style="width: 70%;"></center>
         <div class="content">
             <br>
             <br>
-            <div style="margin-left: 20%; padding-left: 3%; margin-right: 20%; background-color: azure;"><h1 class='otherheader' style='color:#333; font-size: 35px; font-family: monospace;''>Featured</h1></div>
+            <div class='banners' style="margin-left: 20%; padding-left: 3%; margin-right: 20%; background-color: azure;"><h1 class='otherheader' style='color:#333; font-size: 35px; font-family: monospace;''>Featured</h1></div>
             <br>
             <hr class='one' style="margin-right: 15%; margin-left: 15%;">
             <br>
+
             <div class='innerContent'>
-                <div class="column"><a href="map.html"><img src="map map.png" style="width: 100%;"></a>Live Map</div>
-                <div class="column"><a href="news-hub.html"><img src="drew map.png" style="width: 100%;"></a>News</div>
-                <div class="column"><a href="https://discord.gg/Qu8JcJZJ7M"><img src="discord_map.png" style="width: 100%;"></a>Discord</div>
+                <div class="column"><a href="map.html"><img class='button' src="map map.png"></a>Live Map</div>
+                <div class="column"><a href="news-hub.html"><img class='button' src="drew map.png"></a>News</div>
+                <div class="column"><a href="https://discord.gg/Qu8JcJZJ7M"><img class='button' src="discord_map.png"></a>Discord</div>
             </div>
+
             <br>
-            <div style="padding-top: 450px;"></div>
+            <div class='breakpoint'></div>
+            
             <div style="margin-left: 20%; padding-left: 3%; margin-right: 20%; background-color: azure;"><h1 class='otherheader' style='color:#333; font-size: 35px; font-family: monospace;'>Extras</h1></div>
             <br>
             <hr class='two' style="margin-right: 15%; margin-left: 15%;">
+
             <div class='extras'>
                 <div style="text-align: left;">
                     <a href="https://paypal.me/wooshco/" >
-                        <img src="donate button.png" style="float: left; width: 50%; min-width: 200px; padding-top: 20px;">
+                        <img class='donateButton' src="donate button.png">
                     </a>
-                    <div style="text-align: left; padding-top: 10%; padding-left: 52%;">
+                    <div class='donateText'>
                         <h3>Donate</h3>
                         <h6>Help Support The Server</h6>
                     </div>

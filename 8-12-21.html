@@ -14,8 +14,7 @@
         transform: translate(-50%);
         position: absolute;
         padding-top: 10px;
-        max-width: 50%;
-        min-width: 300px;
+        width: 50%;
         padding-bottom: 25%;
     }
 
@@ -93,6 +92,12 @@
     /* Handle on hover */
     ::-webkit-scrollbar-thumb:hover {
       background: #555;
+    }
+
+    @media only screen and (max-width: 1000px){
+        .innerContent{
+            width: 80%;
+        }
     }
     
 </style>
