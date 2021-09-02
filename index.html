@@ -35,6 +35,19 @@
         color: azure;
     }
 
+    .extras{
+        font-size: 25px;
+        font-family: monospace;
+
+        left: 50%;
+        transform: translate(-50%);
+        position: absolute;
+        padding-top: 10px;
+        max-width: 50%;
+        min-width: 300px;
+        padding-bottom: 25%;
+    }
+
     .header {
         font-family:monospace;
         position: fixed;
@@ -88,9 +101,18 @@
       background: #555;
     }
 
-    hr {
+    hr.one {
         border: 3px solid rgb(204, 78, 78);
     }
+
+    hr.two {
+        border: 3px solid rgb(78, 154, 204);
+    }
+
+    hr.three {
+        border: 3px solid rgb(204, 196, 78);
+    }
+
 </style>
 <html>
     <head>
@@ -113,12 +135,27 @@
             <br>
             <div style="margin-left: 20%; padding-left: 3%; margin-right: 20%; background-color: azure;"><h1 class='otherheader' style='color:#333; font-size: 35px; font-family: monospace;''>Featured</h1></div>
             <br>
-            <hr style="margin-right: 15%; margin-left: 15%;">
+            <hr class='one' style="margin-right: 15%; margin-left: 15%;">
             <br>
             <div class='innerContent'>
                 <div class="column"><a href="map.html"><img src="map map.png" style="width: 100%;"></a>Live Map</div>
                 <div class="column"><a href="news-hub.html"><img src="drew map.png" style="width: 100%;"></a>News</div>
-                <div class="column"><a href="https://paypal.me/wooshco/"><img src="donate button.png" style="width: 100%;"></a>Donate</div>
+                <div class="column"><a href="https://discord.gg/Qu8JcJZJ7M"><img src="discord_map.png" style="width: 100%;"></a>Discord</div>
+            </div>
+            <br>
+            <div style="padding-top: 450px;"></div>
+            <div style="margin-left: 20%; padding-left: 3%; margin-right: 20%; background-color: azure;"><h1 class='otherheader' style='color:#333; font-size: 35px; font-family: monospace;'>Extras</h1></div>
+            <hr class='two' style="margin-right: 15%; margin-left: 15%;">
+            <div class='extras'>
+                <div style="text-align: left;">
+                    <a href="https://paypal.me/wooshco/" >
+                        <img src="donate button.png" style="float: left; width: 50%; min-width: 200px; padding-top: 20px;">
+                    </a>
+                    <div style="text-align: left; padding-top: 10%; padding-left: 52%;">
+                        <h3>Donate</h3>
+                        <h6>Help Support The Server</h6>
+                    </div>
+                </div>
             </div>
         </div>
         <script>
