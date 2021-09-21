@@ -119,7 +119,6 @@
       transform-style: preserve-3d;
       transition: all 1s ease-in-out;
       width: 100%;
-      background-color: #000;
     }
     .card:hover {
       transform: rotateY(180deg);
@@ -144,6 +143,47 @@
       overflow-x: hidden;
     }
 
+
+    /* flip 2 test */
+    .flip-card {
+      background-color: transparent;
+      width: 500px;
+      height: 500px;
+      perspective: 1000px;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+
+    .flip-card-front {
+      background-color: #bbb;
+      color: black;
+    }
+
+    .flip-card-back {
+      background-color: #ffffff;
+      color: #111;
+      transform: rotateY(180deg);
+    }
 
     
         /* width */
@@ -273,17 +313,21 @@
                     </div>
                 </div>
 
-                <div class="card-container">
-                    <div class="card">
-                      <div class="side"><img class='face' src="cards/drewcard.jpg" alt="Jimmy Eat World"></div>
-                        <div class="side back">
-                            <h2 class="title">Perspective</h3>
-                            <p class='lore'>
-                                Fear filled Archibald’s mind when the Mall began construction. Now demand for workers would be higher than ever. He was the only male in his unit. He had watched the handler take every last one of his children to work in the halls. Each and every time, there was nothing he could do, for the handler could overpower any one of them in an instant.
-                            </p>
-                        </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="cards/drewcard.jpg" alt="Avatar" style="width:100%; height:100%;">
+                      </div>
+                      <div class="flip-card-back">
+                        <h3>Perspective</h1> 
+                        <p class="lore">Fear filled Archibald’s mind when the Mall began construction. Now demand for workers would be higher 
+                            than ever. He was the only male in his unit. He had watched the handler take every last one of his 
+                            children to work in the halls. Each and every time, there was nothing he could do, for the handler 
+                            could overpower any one of them in an instant.
+                        </p>
+                      </div>
                     </div>
-                </div>
+                  </div>
 
 
                 
