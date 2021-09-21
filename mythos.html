@@ -147,34 +147,35 @@
 
     /* flip 2 test */
     .flip-card {
-      background-color: transparent;
-      width: 50%;
-      height: 500px;
-      perspective: 1000px;
-      margin-left: 2%;
-      margin-right: 2%;
+        background-color: transparent;
+        width: 50%;
+        height: 500px;
+        perspective: 1000px;
+        margin-left: 2%;
+        margin-right: 2%;
     }
 
     .flip-card-inner {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      text-align: center;
-      transition: transform 0.6s;
-      transform-style: preserve-3d;
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     }
 
     .flip-card:hover .flip-card-inner {
-      transform: rotateY(180deg);
+        transform: rotateY(180deg);
     }
 
     .flip-card-front, .flip-card-back {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      -webkit-backface-visibility: hidden;
-      backface-visibility: hidden;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 10px;
     }
 
     .flip-card-front {
@@ -183,12 +184,13 @@
     }
 
     .flip-card-back {
-      background-color: #ffffff;
-      color: #111;
-      transform: rotateY(180deg);
-      line-height: 24px;
-      overflow: scroll;
-      overflow-x: hidden;
+        background-color: #ffffff;
+        color: #111;
+        transform: rotateY(180deg);
+        line-height: 24px;
+        overflow: scroll;
+        overflow-x: hidden;
+        background-image: url('cards/marble-card.png');
     }
 
     .lore {
@@ -197,10 +199,14 @@
         font-size: medium;
     }
 
+    .face {
+        border-radius: 10px;
+    }
+
     
         /* width */
-        ::-webkit-scrollbar {
-      width: 10px;
+    ::-webkit-scrollbar {
+        width: 10px;
     }
     
     /* Track */
@@ -285,7 +291,7 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img src="cards/ferris-standin.png" alt="Avatar" style="width:100%; height:100%;">
+                            <img class='face' src="cards/cosmodrome.jpg" alt="Avatar" style="width:100%; height:100%;">
                         </div>
                         <div class="flip-card-back">
                             <div class='lore'>
@@ -301,7 +307,7 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img src="cards/Unveiling.jpg" alt="Avatar" style="width:100%; height:100%;">
+                            <img class='face' src="cards/jordan-card.png" alt="Avatar" style="width:100%; height:100%;">
                         </div>
                         <div class="flip-card-back">
                             <div class='lore'>
@@ -331,13 +337,16 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img src="cards/drewcard.jpg" alt="Avatar" style="width:100%; height:100%;">
+                            <img class='face' src="cards/ferris-standin.png" alt="Avatar" style="width:100%; height:100%;">
                         </div>
                         <div class="flip-card-back">
                             <div class='lore'>
                                 <h3>Perspective</h1> 
                                     <p>Fear filled Archibald&rsquo;s mind when the Mall began construction. Now demand for workers would be higher than ever. He was the only male in his unit. He had watched the handler take every last one of his children to work in the halls. Each and every time, there was nothing he could do, for the handler could overpower any one of them in an instant.</p>
-                                </div>
+                                    <p>In June, news came in that a general store, Ikea, would be built in the mall. The handler visited Archibald&rsquo;s unit and took with him all the children that had been born since he had last visited. Archibald&rsquo;s rage grew, but he knew that there was little he could do. On his way out, the handler&rsquo;s pants caught on an edge and caused him to drop a piece of iron. He did not seem to notice, but Archibald did. The item was quickly hidden under his bed.</p>
+                                    <p>In July, news came in that a bookstore, Bens &amp; Noble, would be built in the mall. Once again, the handler visited Archibald&rsquo;s unit and took all of the new born children with him. Archibald&rsquo;s rage grew even more, but he knew there was little he could do. On his way out, the handler left a furnace because several people had died of hypothermia, hurting his quotas. The handler did not realize the opportunity he had just given them, but Archibald did. He made sure to thank the handler greatly for the gift.</p>
+                                    <p>In August, news came in that several workers at the mall had died, and their positions would need to be replaced. Once again, the handler visited Archibald&rsquo;s unit and began to take the newborns. Archibald could stand by no longer, he rushed towards the handler to try and stop him; but just as he predicted, the handler overpowered him. That day, he was beaten almost to death by a wooden baton that the handler was carrying. When he was done, there was little of the baton left, so the handler tossed it into the nearby crops and left. The other people tended to Archibald&rsquo;s wounds and tried to comfort him. But he was the most comfortable he had been in a long time, for his plan was ready.</p>
+                                    <p>In July, the handler returned to replace Archibald. After their altercation, he figured it would be safest to dispose of him. But upon entering his unit, Archibald was nowhere in sight. The handler was confused, he was met with a room full of women and children staring at him, seemingly in anticipation. Out of the corner of his eye, he spotted movement. As the handler began to turn to face his attacker, his head was cut clean from his body. Archibald led his unit outside and towards freedom.&nbsp;</p>                                </div>
                         </div>
                     </div>
                 </div>
