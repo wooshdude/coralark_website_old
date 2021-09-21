@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<style>
+    .content {
+        margin: 0 auto;
+        margin-bottom: auto;
+        position:absolute;
+        left:0;
+        right:0;
+        padding-bottom: 50%;
+    }
+
+    .innerContent {
+        text-align: center;
+        display: flex;
+        font-size: 25px;
+        font-family: monospace;
+
+        left: 50%;
+        transform: translate(-50%);
+        position: absolute;
+        padding-top: 10px;
+        width: 80%;
+        padding-bottom: 25%;
+    }
+
+    .innerContent::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    body{
+        background-color: #333;
+        background-size: 100%;
+        color: azure;
+        font-size: 20px;
+        font-family: monospace;
+    }
+
+    .header {
+        font-family:monospace;
+        padding-top: 2%;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+    hr.one {
+        border: 3px solid rgb(204, 78, 78);
+    }
+
+    hr.two {
+        border: 3px solid rgb(78, 154, 204);
+    }
+
+    hr.three {
+        border: 3px solid rgb(204, 196, 78);
+    }
+
+
+    .parallax {
+        /* The image used */
+        background-image: url("beetel.png");
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        width: 100%;
+        min-height: 500px;
+
+        padding-top: 16%;
+    }
+
+    .topBar {
+        font-family: monospace;
+        position: fixed;
+        background-color: #333;
+        width: 100%;
+        height: auto;
+        top: 0;
+        padding-left: 2%;
+        padding-top: 15px;
+        padding-bottom: 8px;
+    }
+
+    /*cards*/
+    .card-container {
+      cursor: pointer;
+      height: 500px;
+      perspective: 600;
+      position: relative;
+      width: 500px;
+      margin-right: 2%;
+      margin-left: 2%;
+    }
+
+    .face {
+        width: 100%;
+        height: 100%;
+    }
+
+    .title {
+        text-align: center;
+        margin-top: 30px;
+        font-size: larger;
+    }
+
+    .lore {
+        text-align: left;
+        margin: 25px;
+        font-size: medium;
+    }
+
+    .card {
+      height: 100%;
+      position: absolute;
+      transform-style: preserve-3d;
+      transition: all 1s ease-in-out;
+      width: 100%;
+    }
+    .card:hover {
+      transform: rotateY(180deg);
+    }
+    .card .side {
+      backface-visibility: hidden;
+      border-radius: 6px;
+      height: 100%;
+      position: absolute;
+      overflow: hidden;
+      width: 100%;
+    }
+    .card .back {
+      background: #eaeaed;
+      color: #111;
+      line-height: 24px;
+      text-align: left;
+      transform: rotateY(180deg);
+      font-size: small;
+      overflow: scroll;
+      overflow-x: hidden;
+    }
+
+
+    
+        /* width */
+        ::-webkit-scrollbar {
+      width: 10px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: #333;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #888;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+
+    @media only screen and (max-width: 1200px){
+        .card-container {
+            cursor: pointer;
+            height: 400px;
+            perspective: 600;
+            position: relative;
+            width: 300px;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+
+        .innerContent {
+            text-align: center;
+            display: block;
+            font-size: 25px;
+            font-family: monospace;
+
+            left: 50%;
+            transform: translate(-50%);
+            position: absolute;
+            padding-top: 10px;
+            width: 80%;
+            padding-bottom: 25%;
+        }
+
+        .banner {
+            display: none;
+        }
+
+        .spacer {
+            display: none;
+        }
+
+    }
+    
+</style>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>8-26-21</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="yourmomicon.png">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C1VCD3SCT7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-C1VCD3SCT7');
+</script>
+    </head>
+    <body>
+
+
+        <div class="spacer" style="margin-bottom: 80px;"></div>
+        <center><img class='banner' src='onlinemap.PNG' style="width: 70%;"></center>
+        <div class="content">
+            <center><h1 class='header' style="text-align: center;">YOURMOM.MYTHOS</h1></center>
+            <hr class='one' style="margin-right: 18%; margin-left: 18%;">
+            <br>
+            <div class='innerContent'>
+                
+                <div class="card-container">
+                    <div class="card">
+                      <div class="side"><img class='face' src="cards/ferris-standin.png" alt="Jimmy Eat World"></div>
+                        <div class="side back">
+                            <h2 class="title">One Minute</h3>
+                            <p class='lore'>
+                                Block, after block, after block, after block breaks. The sounds of each are beginning to blend together. Just keep digging they said, it can’t be that long they said. Slimes were nowhere in sight, and chances were that an hour from now there would be none.
+                                Ferris began to hear his own heartbeat in sync with the stone he was destroying. Just then, his pickaxe broke, but in a matter of seconds another had taken its place and the cycle continued. He broke block, after block, after block. Ferris could hear his breathing move in sync with the stone he was destroying. His pickaxe broke. Another took its place. He broke block, after block. Ferris could hear the sounds of his footsteps reverberate in sync with the stone he was destroying. His pickaxe broke. Another took its place. He broke a block, and the new pickaxe broke. It must have been damaged already.
+                                Ferris reached all over, but there were no more pickaxes left. He began the walk back. For ten seconds, all that could be heard were his heartbeat, his breath, and his footsteps. Another ten seconds, were the sounds of louder, faster footsteps. Another ten seconds, were the screams of a horrified miner. Another ten seconds, were the screams of a horrified miner and something much louder. After another ten seconds, the sound of the miner falling to the ground sealed his fate. Before the final ten seconds of his journey could be completed, Ferris was gone, leaving a faint trail of red down the tunnel.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-container">
+                    <div class="card">
+                      <div class="side"><img class='face' src="cards/Unveiling.jpg" alt="Jimmy Eat World"></div>
+                        <div class="side back">
+                            <h2 class="title">Faith</h3>
+                            <div class='lore'>
+                                <p>&ldquo;Welcome child.&rdquo;</p>
+                                <p>The skeptic walked into the holy place, it seemed more like a residence than a church. &ldquo;Who&rsquo;re you?&rdquo;</p>
+                                <p>The speaker seemed offended, &ldquo;Why, I am the speaker, I speak for the Jordan.&rdquo;</p>
+                                <p>&ldquo;Yeah, and how does that work?&rdquo; The skeptic analyzed the building&rsquo;s interior. It was clear that it was built by no god, but a man, regardless of what the common citizens would believe.</p>
+                                <p>&ldquo;I have a connection with it, ever since I&hellip;&rdquo;</p>
+                                <p>&ldquo;Since you built it?,&rdquo; the skeptic interrupted.</p>
+                                <p>&ldquo;I- I have no idea what you are talking about. The Jordan was placed here by a higher power to guide us all.&rdquo;</p>
+                                <p>&ldquo;Well, your followers may eat that up, but anyone with half a brain can tell it&rsquo;s a ruse,&rdquo; the skeptic leaned against a wall.</p>
+                                <p>The speaker grew increasingly nervous as the skeptic spoke, &ldquo;So you mean to try and defame me? Ruin the one thing that brings meaning to so many lives?&rdquo;</p>
+                                <p>&ldquo;No, I&rsquo;m here to tell you that a very powerful man has taken interest in your control over Section 8&rsquo;s culture. He wants you to continue &lsquo;educating&rsquo; the public, but now with his orders guiding you.&rdquo;</p>
+                                <p>&ldquo;I have no interest in a partnership of any kind, so you can tell your boss to drop it.</p>
+                                <p>The skeptic chuckled to himself, &ldquo;This would be no partnership, he would become your new boss.&rdquo;</p>
+                                <p>&ldquo;Is that supposed to convince me to change my mind?&rdquo;</p>
+                                <p>&ldquo;No, I just like the details to be accurate,&rdquo; he paused for a moment. &ldquo;Listen, I strongly encourage you to take this deal.&rdquo;</p>
+                                <p>&ldquo;Are you threatening me with something if I refuse?&rdquo;</p>
+                                <p>The skeptic stood up and pulled back his jacket, revealing a crossbow with a single firework loaded, &ldquo;I&rsquo;m afraid I&rsquo;ve been instructed to.&rdquo; The speaker was shocked at the skeptic&rsquo;s actions, but he had worked too hard to get where he was to give it up now. &ldquo;People like you and your boss think they can take everything by force, you think you&rsquo;re so much tougher than all of us,&rdquo; the speaker pulled a diamond sword from his waist, &ldquo;but we have fight in us, and we won&rsquo;t back down.&rdquo; Now the speaker was smiling, he held out his sword waiting for the skeptic.</p>
+                                <p>&ldquo;It was your choice,&rdquo; the skeptic reached for his crossbow. Many people in the area could confirm that they heard a loud boom that day. A short hour later, a cleaning crew followed by a construction crew entered the Jordan. Most assumed that it was getting renovated.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                      <div class="side"><img class='face' src="cards/drewcard.jpg" alt="Jimmy Eat World"></div>
+                        <div class="side back">
+                            <h2 class="title">Perspective</h3>
+                            <p class='lore'>
+                                Fear filled Archibald’s mind when the Mall began construction. Now demand for workers would be higher than ever. He was the only male in his unit. He had watched the handler take every last one of his children to work in the halls. Each and every time, there was nothing he could do, for the handler could overpower any one of them in an instant.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+            </div>
+        </div>
+        <script src="" async defer></script>
+    </body>
+</html>
