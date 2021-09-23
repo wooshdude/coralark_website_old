@@ -149,10 +149,12 @@
     .flip-card {
         background-color: transparent;
         width: 50%;
-        height: 550px;
+        height: 610px;
         perspective: 1000px;
         margin-left: 2%;
         margin-right: 2%;
+        display: inline-table;
+        min-width: 300px;
     }
 
     .flip-card-inner {
@@ -191,6 +193,10 @@
         overflow: scroll;
         overflow-x: hidden;
         background-image: url('cards/marble-card.png');
+        background-size:cover;
+        background-attachment: absolute;
+        background-position: bottom;
+        background-repeat: no-repeat;
     }
 
     .lore {
@@ -301,12 +307,11 @@
             <center><h1 class='header' style="text-align: center;">YOURMOM.MYTHOS</h1></center>
             <hr class='one' style="margin-right: 18%; margin-left: 18%;">
             <br>
-            <div class='innerContent'>
-                
+            <div class='innerContent' >
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img class='face' src="cards/cosmodrome.jpg" alt="Avatar" style="width:100%; height:100%;">
+                            <img class='face' src="cards/one minute card.png" alt="Avatar" style="width:100%; height:100%;">
                         </div>
                         <div class="flip-card-back">
                             <div class='lore'>
@@ -322,9 +327,10 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img class='face' src="cards/jordan-card.png" alt="Avatar" style="width:100%; height:100%;">
+                            <img class='face' src="cards/jordan card.png" alt="Avatar" style="width:100%; height:100%;">
                         </div>
                         <div class="flip-card-back">
+                            <br>
                             <div class='lore'>
                                 <h2>Faith</h2> 
                                 <p>&ldquo;Welcome child.&rdquo;</p>
@@ -348,6 +354,7 @@
                         </div>
                     </div>
                 </div>
+                <!--
 
                 <div class="flip-card">
                     <div class="flip-card-inner">
@@ -365,20 +372,11 @@
                         </div>
                     </div>
                 </div>
-
-                
-            
-            </div>
-            
-            <div class='desktopSpacer' style="margin-bottom: 600px;"></div>
-            <div class='mobileSpacer' style='margin-bottom: 1290px;'></div>
-
-            <div class="innerContent">
-
+            -->
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img class='face' src="cards/archons forge.jpg" alt="Avatar" style="width:100%; height:100%;">
+                            <img class='face' src="cards/sewer card.png" alt="Avatar" style="width:100%; height:100%;">
                         </div>
                         <div class="flip-card-back">
                             <div class='lore'>
@@ -395,6 +393,35 @@
                     </div>
                 </div>
 
+                
+            
+            </div>
+            
+            <div class='desktopSpacer' style="margin-bottom: 700px;"></div>
+            <div class='mobileSpacer' style='margin-bottom: 1290px;'></div>
+
+            <div class="innerContent">
+                <!--
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img class='face' src="cards/sewer card.png" alt="Avatar" style="width:100%; height:100%;">
+                        </div>
+                        <div class="flip-card-back">
+                            <div class='lore'>
+                                <h2>A Brewing Secret</h2> 
+                                    <p>You can never trust someone. Not completely, anyway. There&rsquo;s always something lurking beyond their words, a trove of secrets sworn never to be unearthed. Whether these secrets are kept for money, power, or for the sake of knowledge, none but the bearer can tell. However, when we take a step back and look at the story as a whole, these secrets become a lot less&hellip; well, secret.&nbsp;</p>
+                                    <p>&ldquo;Are you sure he won&rsquo;t find out?&rdquo; A voice questioned.</p>
+                                    <p>&ldquo;Of course not. Trust me, I made sure to cover our tracks&rdquo; A second voice responded.</p>
+                                    <p>&ldquo;I&rsquo;m still not set on whether or not building this under the mayor&rsquo;s nose was a good idea.&rdquo; The pair were                                       hunched over. A faint sloshing noise could be heard as they crept along. The lights illuminating what can only be described as a tunnel                                    were too dim to make out anything besides blotchy silhouettes. &ldquo;I mean, if he hears anything suspicious he could send the police to                                  investigate.&rdquo;</p>
+                                    <p>&ldquo;Need I remind you I&rsquo;m on the force too?&rdquo; The second voice retorted. He places his hand on the wall of the tunnel                                     and reveals a secret door. The group crawls inside. A lamp turns on and illuminates the room. The second voice is the first to enter. He                                       wore a long red robe and a black beret that covered his aquamarine hair. &ldquo;Look, if you&rsquo;re that worried about getting into a                                    scuffle with the law, brew an invisibility potion or something. That&rsquo;s why we built this thing in the first place.&rdquo;&nbsp;</p>
+                                    <p>The first voice responds as he too enters the stone brick room. &ldquo;Sure, I could get myself outta here, but I&rsquo;m worried                                       about all this stuff.&rdquo;&nbsp;</p>
+                                    <p>The room was littered with empty bottles and other brewing materials, as well as 6 strange machines built into the wall. The duo                                        proceeded to get to work, placing materials into the machines, which produced strange runes. As more and more components were added, the                                       runes began to glow in a way that can only be described as &lsquo;sinister&rsquo;.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            -->
                 <div class="flip-card">
                     
                 </div>
@@ -402,7 +429,6 @@
                 <div class="flip-card">
                     
                 </div>
-                
             </div>
         </div>
         <script src="" async defer></script>
