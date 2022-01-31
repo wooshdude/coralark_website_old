@@ -11,14 +11,23 @@
 <head>
   <meta charset="utf-8">
   <title>fuck you</title>
+  
 </head>
 <body>
-    <script>
-        function getIP(json) {
-          document.write(json.ip);
-        }
-        </script>
-        <script src="http://api.ipify.org?format=jsonp&callback=getIP"></script>
-    <p>fuck you</
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <p>fuck you</p>
 </body>
 </html>
+
+<script>
+  $.get('https://api.hackertarget.com/geoip/?q=116.12.250.1', function(data) {
+  // Convert key-value pairs to JSON
+  // https://stackoverflow.com/a/39284735/452587
+  data = data.trim().split('\n').reduce(function(obj, pair) {
+    pair = pair.split(': ');
+    return obj[pair[0]] = pair[1], obj;
+  }, {});
+  console.log(data);
+});
+</script>
