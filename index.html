@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <style>
-    body {
-        text-align: center;
-        transform: translateY(100%);
-        font-family: monospace;
-        font-size: 72px;
-    }
+    
 </style>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>fuck you</title>
+    <meta charset="utf-8">
+    <title>fuck you</title>
+    <link src='style.css'>
   
 </head>
 <body>
@@ -21,13 +17,4 @@
 </html>
 
 <script>
-  $.get('https://api.hackertarget.com/geoip/?q=116.12.250.1', function(data) {
-  // Convert key-value pairs to JSON
-  // https://stackoverflow.com/a/39284735/452587
-  data = data.trim().split('\n').reduce(function(obj, pair) {
-    pair = pair.split(': ');
-    return obj[pair[0]] = pair[1], obj;
-  }, {});
-  console.log(data);
-});
 </script>
