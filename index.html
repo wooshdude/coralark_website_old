@@ -1,20 +1,37 @@
 <!DOCTYPE html>
-<style>
-    
-</style>
 <html>
 <head>
     <meta charset="utf-8">
-    <title>fuck you</title>
-    <link src='style.css'>
-  
+    <title>it's raining</title>
+    <link rel="stylesheet" href='style.css'>
 </head>
 <body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-
-    <p>fuck you</p>
+    <div class="content">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img class='face' src="cards/card back.png" alt="Avatar" style="width:100%; height:100%;">
+                </div>
+                <div class="flip-card-back">
+                    <div class='lore' style='text-align:center; padding-top:25%;'>
+                        <p>FLUSTERED, ALL WHO SEE</p>
+                        <p>THE SUN NEVER ADMIRES BACK</p>
+                        <p>FOR HIS LOVE IS FLAT</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio autoplay loop id="rain">
+        <source src="drew success rain.wav" type="audio/wav">
+    </audio>
 </body>
 </html>
 
 <script>
+    document.addEventListener('click', musicPlay);
+    function musicPlay() {
+        document.getElementById('rain').play();
+        document.removeEventListener('click', musicPlay);
+    }
 </script>
