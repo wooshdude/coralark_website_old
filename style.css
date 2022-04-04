@@ -1,7 +1,8 @@
 html {
-    zoom: 2;
+    zoom: 1;
 }
 
 .content {
     padding: 20px;
+    width:auto;
 }
