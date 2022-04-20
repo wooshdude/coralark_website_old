@@ -1,8 +1,13 @@
 html {
-    zoom: 2;
+    zoom: 1.5;
 }
 
 .content {
     padding: 20px;
     width:auto;
+    
+}
+
+.navbar {
+    transform: scale(1, 2)
 }
