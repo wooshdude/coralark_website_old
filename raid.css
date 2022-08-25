@@ -1,123 +1,35 @@
-body {
-    background: black;
-    font: 13px arial, sans-serif;
-    margin: 8px;
-    color: white;
-}
-
-a {
-    color: white;
-    cursor: pointer;
-}
-
-a:hover {
-    text-decoration: none;
-    cursor: pointer;
-}
-
-#streams {
-    text-align: center;
-    float: left;
-    margin: 0;
-    margin-right: -100px;
-    padding: 0;
-}
-
-iframe {
-    border:0 none;
-}
-
-#chatbox {
-    float: right;
-    width: 320px;
-    height: 100%;
-    margin: 0px;
-    margin-left: -100px;
-    padding: 0;
-}
-
-.stream_chat {
-    padding: 0;
-}
-
-#helpbox {
-    text-align: justify;
-    display: none;
-    width: 600px;
-    margin: 0 auto;
-    border: 2px solid white;
-    border-radius: 10px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-}
-
-#helpbox h1 {
-    text-align: center;
-}
-
-#helpbox a {
-    color: #e76118;
-    text-decoration: none;
-}
-
-#helpbox a:hover {
-    text-decoration: underline;
-}
-
-#helptext {
-    margin: 10px;
-}
-
-#credits {
-    text-align: right;
-    font-size: 10px;
-    padding-right: 10px;
-}
-
-#bottom_right_bar {
-    height: 1em;
+.streams {
     position: absolute;
-    right: 8px;
-    bottom: 12px;
-}
-
-.optionbox {
-    z-index: 5;
-    display: none;
-    background: rgba(0,0,0,0.65);
-    padding: 5px;
-    margin: 0 auto;
-    border: 2px solid white;
-    border-radius: 10px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    position: absolute;
-}
-
-#change_streams {
-    width: 127px;
-}
-
-.streamlist_item .stream_name {
-    width: 123px;
-}
-
-.fullwidth {
+    display: flex;
+    flex-wrap: wrap;
+    top: 2%;
+    left: 5%;
     width: 100%;
+    justify-content: space-evenly;
 }
 
-.left {
-    float: left;
+body {
+    overflow-y: scroll;
 }
 
-.right {
-    float: right;
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #643f6e #262626;
 }
 
-.centering {
-    text-align: center;
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
 }
 
-.clear {
-    clear: both;
+  *::-webkit-scrollbar-track {
+    background: #262626;
+}
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #643f6e;
+    border-radius: 10px;
+    border: 3px solid #643f6e;
 }
